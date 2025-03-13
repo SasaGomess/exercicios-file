@@ -2,7 +2,7 @@
 
 <h2>📌Funcionamento do programa </h2>
 
-Projeto consiste em ler um arquivo criado pelo usuário na pasta de origem do programa chamado "in.txt" que contém os dados nome, preço e quantidade. Após isso adcionar os dados desse arquivo em um objeto, para que no fim gere um novo arquivo "summary.txt" em uma nova subpasta denominada "out" criada a partir da pasta original do arquivo de origem, e que contenha apenas nome, e valor total do item.
+Projeto consiste em ler um arquivo criado pelo usuário na pasta de origem do programa chamado "in.txt" que contém os dados **nome, preço e quantidade**. Após isso adcionar os dados desse arquivo em um objeto do tipo product que faça uma conta de **quantidade x preço** em um método para descobrir o valor total do item. Por fim o programa irá gerar um novo arquivo "summary.txt" em uma nova subpasta denominada "out" criada apartir da pasta original do arquivo de origem, e que contenha apenas **nome, e valor total** do item.
  ***
  **Dados do arquivo in.txt:**
 
@@ -32,10 +32,30 @@ Separados por "," como na imagem 👇🏽
 <h1>⚙️Classes importantes</h1>
 
 * FileReader -> Utilizada para ler o caminho do arquivo.
-* BufferedReader -> Instanciado apartir do FileReader, utilizado para otimização e rapidez da busca pelo arquivo. Cria um espaço especial na Ram o buffer que guarda todo o dado encontrado pelo FileReader
-* Product -> Classe criada para armazenar os itens da lista, que contém cada linha do arquivo. E criei o método totalValue para pegar o valor total do produto (preço * quantidade)
-* FileWriter -> Utilizada para criação do arquivo summary.txt
+* BufferedReader -> Instanciado apartir do FileReader, utilizado para otimização e rapidez da busca pelo arquivo. Cria um espaço especial na Ram o buffer que guarda todo o dado encontrado pelo FileReader.
+* Product -> Classe criada para armazenar os itens da lista, que contém cada linha do arquivo. E criei o método totalValue para pegar o valor total do produto (preço * quantidade).
+* FileWriter -> Utilizada para criação do arquivo summary.txt.
 * BufferedWriter -> Utilizado para criação e para escrever o conteúdo do arquivo.
-* IOException -> Utilei o try-catch para pegar uma possível exceção que o programa pode gerar caso o caminho do arquivo que foi passado não exista.
+* IOException -> Utilizei o try-catch para pegar uma possível exceção que o programa pode gerar caso o caminho do arquivo que foi passado não exista.
 
+<h1>🟢Como executar o programa?</h1>
 
+1. Clone o meu repositório.
+2. Na IDE de sua preferência (Recomendação: Eclipse ou InteliJ).
+3. Coloque a pasta do projeto em uma pasta com o nome temp.
+4. Dentro da pasta temp, criar um arquivo in.txt.
+5. Execute o programa, e digite os dados solicitados dessa forma:
+
+Windows:
+   
+ ```
+ \\temp\\in.txt
+```
+  Mac:
+```
+ /temp/in.txt
+```
+  Linux:
+```
+ /temp/in.txt
+```
