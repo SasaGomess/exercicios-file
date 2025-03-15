@@ -30,7 +30,6 @@ public class Program {
 		String folderPath = filePath.getParent();
 
 		boolean sucess = new File(folderPath + "\\out").mkdir();
-		System.out.println(sucess);
 
 		String createdFile = folderPath + "\\out\\summary.txt";
 
